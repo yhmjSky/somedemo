@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xcq.somedemo.view.RadarView
+            android:id="@+id/radview"
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            tools:ignore="MissingConstraints"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:text="76"
+            android:textColor="#024B7A"
+            android:textSize="28sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

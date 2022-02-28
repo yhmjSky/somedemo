@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--      帧布局可以换成相对布局,但底栏不好处理    -->
+
+    <com.xcq.somedemo.MyScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.xcq.somedemo.GoodsInfoActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+<!--            <View-->
+<!--                android:id="@+id/view_one"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_marginTop="45dp"-->
+<!--                android:background="@android:color/holo_orange_dark"-->
+<!--                android:orientation="vertical">-->
+
+<!--            </View>-->
+
+            <LinearLayout
+                android:id="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="43dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="第一块">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="@android:color/holo_blue_bright"
+                android:orientation="vertical">
+
+            </View>
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@android:color/holo_green_dark"
+                android:orientation="vertical">
+
+            </View>
+
+            <View
+                android:id="@+id/view_four"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:background="@android:color/holo_red_light"
+                android:orientation="vertical">
+            </View>
+
+        </LinearLayout>
+
+    </com.xcq.somedemo.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:orientation="horizontal"
+        android:divider="@drawable/divider_vertical"
+        android:showDividers="middle"
+        android:dividerPadding="16dp"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/bt_item1"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=" Item 1 "/>
+
+        <TextView
+            android:id="@+id/bt_item2"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=" Item 2 "/>
+
+        <TextView
+            android:id="@+id/bt_item3"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=" Item 3 "/>
+
+        <TextView
+            android:id="@+id/bt_item4"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=" Item 4 "/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=" 底栏 "/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
